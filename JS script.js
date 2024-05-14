@@ -1,0 +1,1 @@
+alert{"Alert meassage from External JavaScript"}
