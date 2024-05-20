@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = [2, 7, 10, 8, 15, 20];
+        let max = numbers[0]; //initialize to the first value
+
+        for (let i = 1; i < numbers.length; i++) {
+            if (numbers [i] > max) {
+                max = numbers [i];
+            }
+        }
+       
+        document.write(max);  //outputs: 8
+
+    </script>
+</body>
+</html>
