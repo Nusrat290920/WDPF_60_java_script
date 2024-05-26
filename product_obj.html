@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="show"></div>
+    <script>
+        const product ={
+            name:"Samsung",
+            price: 10000,
+            details: "Lorem",
+            weight: "50g",
+            colour: "Silver"
+        }
+        console.log(product); 
+        product.info = function(){
+            let text = "" ; 
+            text += "Product name:" + this.name + "<br>";
+            text += "Product price:" + this.price + "<br>";
+            text += "Product details:" + this.details + "<br>";
+            text += "Product weight:" + this.weight + "<br>";
+            text += "Product colour:" + this.colour + "<br>";
+
+            return text;
+
+        }
+        document.write(product.info());
+        //document.getElementById("show").innerHTML= product.info();
+    </script>
+</body>
+</html>
