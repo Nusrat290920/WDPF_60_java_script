@@ -6,17 +6,30 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        function factCalc() {
-let num = prompt("Enter my number" , "");
-//let num = 5;
-var fact = 1;
-for(let i = num; i>=1; i--) {
-fact = fact * i;
-}
-alert(fact);
-}
-    </script>
-    <button onclick="factCalc()">Click Here</button>
+   
+    <div id="fact"></div>
+ <script>
+    function factCalc(){
+        let num = prompt ("Enter number", "");
+        let fact = 1;
+
+        for(let i = num; i>=1; i--){
+            fact = fact * i
+            
+        }
+        document.getElementById("fact").innerHTML= fact
+
+
+
+
+    }
+    
+ </script>
+ <button onclick="factCalc()">Click</button>
+
+
+
+
+
 </body>
 </html>

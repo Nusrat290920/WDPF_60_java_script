@@ -8,7 +8,7 @@
         #result {
             width: 25px;
             height: 30px;
-            background-color: aqua;
+            background-color: rgb(182, 159, 249);
             font-size: 20px;
             padding: 20px;
         }
@@ -19,39 +19,34 @@
             color: #39c29e;
         }
     </style>
-    
-    
-    
-
-
-
-
 </head>
 <body>
 
     <div id="result"></div>
+<script>
+    function pass_fail(){
+        let mcq  = prompt ("Enter mcq mark","");
+        let des = prompt ("Enter des mark", "");
+        let evi = prompt ("Enter evi mark","");
 
-    <script>
-        function pass_fail(){
-
-            let mcq = prompt("Enter mcq marks" , "");
-
-            let Descriptive = prompt("Enter Descriptive marks" , "");
-
-            let Evidence = prompt("Enter Evidence marks" , "");
-
-            if(mcq>=80 && Descriptive>=60 && Evidence>=60){
-                //alert("Pass");
-                document.getElementById("result").innerHTML= "Pass";
-            } else {
-                //alert ("Fail");
-                document.getElementById ("result").innerHTML= "Fail";
-            }
-
+        if(mcq>=80 && des>=60 && evi>=60){
+            document.getElementById("result").innerHTML= "A+";
+        } else {
+            document.getElementById("result").innerHTML= "B+";
         }
-    </script>
+
+    }
+</script>
+<button onclick="pass_fail()">click</button> 
+   
 
 
-<button onclick="pass_fail()">Click Here</button>
+
+
+
+
+
+
+
 </body>
 </html>

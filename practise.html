@@ -6,19 +6,49 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        let x = 2;
-        let y = 4;
-        let z = 6;
+   
+     <script>
+            function primeCheck(){
+                let num = prompt ("Enter Number","");
+                if (num==1){
+                    return num + " " + "is not a prime number"
 
-       let a;
-       a= x * y;
-       alert (a);
-       document.write(a)
+                }else if(num==2){
+                    return num + " " + "is a prime number"
 
-    </script>
+
+                } else if (num==0){
+                    return num + " " + "is not a allowed"
+
+                }
+                
+                
+                else {
+                    for(let i =2; i<num; i++){
+                        if(num% i==0){
+                            return num + " " + "is not a prime number"
+
+                        }
+                    } 
+                    return num + " " + "is a prime number"
+
+
+                }
+
+
+            }
+            document.write(primeCheck());
+        </script>
  
 
+
+
+
+
+    
+
+
+        
 
 
 
