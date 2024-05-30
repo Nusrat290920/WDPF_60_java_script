@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+< lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<>
+    <h1>Data Entry Form</h1>
+    <form name="myForm">
+       
+        Name :
+        <input type="text" name="fullName"> <br> <br>
+        Course :
+        <input type="text" name="course" ><br> <br>
+        Year/Section :
+        <input type="number" name="year" ><br> <br>
+
+        <button type="button" onclick="myFunction()">Try it</button>
+        
+    </form>
+    <script>
+        function myFunction(){
+          
+            let name = document.myForm.fullName.value;
+            let course = document.myForm.course.value;
+            let year = document.myForm.year.value;
+            if (SID==""){
+                alert("SID must be entered");
+            } else if(Name==""){
+                alert("Name must be entered");
+
+            } else{
+            
+            }
+            let myWindow = window.open("", "abc", "width=500, height=300");
+            let output;
+            output = "<h1>Student Information</h1>";
+          
+            output += "Name : " + name + "<br>";
+            output += "Course : " + course + "<br>";
+            output += "Year/Section : " + year + "<br>";
+            myWindow.document.write(output);
+            
+        
+
+    </script>
+    
+</body>
+         

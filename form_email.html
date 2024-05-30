@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
     
+    
+        
+    <script>
+        function validate(){
+            let email1 = document.myform.email.value;
+            let email2 = document.myform.con_email.value;
+            let pass = document.myform.password.value;
+            let  pattern = /[A-z0-9]+@[A-z]+\.[a-z]/;
+            let result = email1.search(pattern);
+        }
 
         
         
-    </style>
+</script>
 </head>
 <body>
     <div id="display"></div>
