@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="validation.js"></script>
+</head>
+<body>
+   <fieldset style="height: 100px;width: 150px;">
+    <form name="login">
+        <b>Email :</b><br><br>
+        <input type="text" name="email" placeholder="Enter user email"><br><br>
+        <input type="button" name="submit" value="SUBMIT" onclick="checkMail()">
+    
+    </form>
+
+   </fieldset>
+
+    <script>
+         function checkMail() {
+
+                let m = document.login.email.value;
+                 
+                    let Checkobj1 = new validation(m);
+
+                    Checkobj1.validate();
+
+                   
+                   
+
+
+                } 
+
+        
+    </script>
+</body>
+</html>
